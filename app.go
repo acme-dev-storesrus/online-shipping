@@ -74,6 +74,7 @@ func main() {
 	}
 
 	fmt.Printf("Server running at port %s\n", s.Addr)
+	fmt.Printf("Display something shouldnt %s", router)
 	fmt.Printf("Open this url %s on your browser to access GoVWA", config.Fullurl)
 	fmt.Println("")
 	err := s.ListenAndServe()
